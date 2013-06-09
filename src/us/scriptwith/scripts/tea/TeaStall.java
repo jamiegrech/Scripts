@@ -23,7 +23,7 @@ import static us.scriptwith.util.GeneralUtilities.getHourlyRate;
  * Time: 6:23 PM
  */
 
-@Manifest(name = "Tea Thief", authors = "Coma", description = "Steals tea")
+@Manifest(name = "Tea Stealer", authors = "Coma", description = "Steals Tea")
 public class TeaStall extends ActiveScript implements PaintListener, MessageListener {
     private Tree container = NodeContainer.submit(new Steal(), new Drop());
     private long timeStart;
