@@ -18,6 +18,7 @@ import java.awt.*;
 import static us.scriptwith.util.GeneralUtilities.getHourlyRate;
 
 /**
+ * Author: Aadil Farouk
  * Date: 6/8/13
  * Time: 6:23 PM
  */

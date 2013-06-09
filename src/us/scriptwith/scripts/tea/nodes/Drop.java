@@ -6,6 +6,7 @@ import org.powerbot.game.api.methods.tab.Inventory;
 import org.powerbot.game.api.wrappers.node.Item;
 
 /**
+ * Author: Aadil Farouk
  * Date: 6/8/13
  * Time: 6:24 PM
  */

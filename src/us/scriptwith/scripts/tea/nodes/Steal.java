@@ -10,6 +10,7 @@ import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.api.wrappers.node.SceneObject;
 
 /**
+ * Author: Aadil Farouk
  * Date: 6/8/13
  * Time: 6:24 PM
  */
