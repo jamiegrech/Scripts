@@ -12,21 +12,18 @@ import org.powerbot.game.api.wrappers.node.Item;
  */
 
 public class Drop extends Node {
-    private final int cupOfTea = 1978;
-    private final int emptyCup = 1980;
+    private final int[] tea = {1978, 1980};
 
     @Override
     public boolean activate() {
-        return Inventory.getCount(cupOfTea, emptyCup) > 0;
+        return Inventory.getCount(tea) > 0;
     }
 
     @Override
     public void execute() {
-        for (Item i : Inventory.getItems()) {
-            if (i.getId() == cupOfTea || i.getId() == emptyCup) {
-                i.getWidgetChild().interact("Drop");
-                Task.sleep(500);
-            }
+        final Item teaCup = Inventory.getItem(tea);
+        if (teaCup != null && teaCup.getWidgetChild().interact("Drop")) {
+            Task.sleep(250);
         }
     }
 }
